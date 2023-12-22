@@ -5,7 +5,7 @@ body {
 	color: #e7b7ff;
 	font-family: 'Roboto', sans-serif;
 	/* display: flex; */
-	--side-panel-width: 200px;
+	--side-panel-width: 150px;
 	font-size: 20px;
 }
 
@@ -53,7 +53,7 @@ div {
 
 
 .textual {
-	text-align: center;
+	text-align: left;
 	/* max-width: calc(75% - var(--side-panel-width)); */
 	max-width: 70%;
 	margin-left: auto;
@@ -118,7 +118,8 @@ div {
 
 .side-panel li {
 	text-align: center;
-	margin-bottom: 10px;
+	margin-top: 50%;
+	margin-bottom: 50%;
 }
 
 .side-panel li a {
