@@ -5,7 +5,7 @@ body {
 	color: #e7b7ff;
 	font-family: 'Roboto', sans-serif;
 	/* display: flex; */
-	--side-panel-width: 150px;
+	--side-panel-width: 160px;
 	font-size: 20px;
 }
 
@@ -20,6 +20,7 @@ div {
 	position: fixed;
 	top: 0;
 	z-index: 2;
+	font-size: 24px;
 }
 
 .site-nav ul {
@@ -45,8 +46,18 @@ div {
 	*/
 }
 
+.side-panel li a, .side-panel li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 0.75em;
+	text-decoration: none;
+	/*
+	background-color: #333;
+	*/
+}
 
-.site-nav li a:hover {
+.site-nav li a:hover, .side-panel li a:hover {
 	background-color: #26233b;
 	border-radius: 20em;
 }
@@ -72,7 +83,8 @@ div {
 .textual ul {
 	text-align: left;
 	margin: 0;
-	font-size: 18px
+	font-size: 22px;
+	display: inline-block;
 	/* float: none; */
 	/* margin: auto; */
 	/* margin-left: auto; */
@@ -87,7 +99,7 @@ div {
 }
 
 .textual ul ul {
-	font-size: 70%; /* Adjust the font size as needed */
+	font-size: 80%; /* Adjust the font size as needed */
 }
 
 .textual ul ul li{
@@ -100,8 +112,9 @@ div {
 
 .side-panel {
 	width: var(--side-panel-width); /* Adjust the width of your side panel */
-	background-color: #333; /* Example background color */
-	color: white; /* Example text color */
+	background-color: #ff77ff;
+	/* background-color: #333; Example background color */
+	color: white;
 	height: 100%;
 	top: 0; /* Align the side-panel to the top */
 	left: 0; /* Align the side-panel to the left */
@@ -113,7 +126,7 @@ div {
 .side-panel ul {
 	list-style-type: none;
 	padding: 0;
-	font-size: 20px;
+	font-size: 24px;
 }
 
 .side-panel li {
