@@ -4,11 +4,14 @@ body {
 	background-color: #7f63a2;
 	color: #e7b7ff;
 	font-family: 'Roboto', sans-serif;
-	display: flex;
+	/* display: flex; */
 	--side-panel-width: 200px;
 	font-size: 20px;
 }
 
+div {
+	margin: 0 auto;
+}
 
 .site-nav {
 	text-align: center;
@@ -52,11 +55,13 @@ body {
 .textual {
 	text-align: center;
 	/* max-width: calc(75% - var(--side-panel-width)); */
-	max-width: 50%;
+	max-width: 70%;
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: calc(var(--side-panel-width) + 0px); /* Adjust the padding */
 	font-size: 18px;
+	white-space: normal; /* Allow text to wrap */
+	word-wrap: break-word; /* Allows long words to be broken and wrap onto the next line */
+    overflow-wrap: break-word; /* Same as word-wrap for better browser support */
 }
 
 .textual p {
@@ -64,6 +69,34 @@ body {
 	text-indent: 3em;
 }
 
+.textual ul {
+	text-align: left;
+	margin: 0;
+	font-size: 18px
+	/* float: none; */
+	/* margin: auto; */
+	/* margin-left: auto; */
+	/* margin-right: auto; */
+}
+
+.textual ul li{
+	/* float: none; */
+	text-align: left;
+	max-width: 100%;
+	font-weight: bold;
+}
+
+.textual ul ul {
+	font-size: 70%; /* Adjust the font size as needed */
+}
+
+.textual ul ul li{
+	font-weight: normal;;
+}
+
+.textual p, .textual li {
+    box-sizing: border-box;
+}
 
 .side-panel {
 	width: var(--side-panel-width); /* Adjust the width of your side panel */
@@ -95,4 +128,6 @@ body {
 
 .main-content{
 	padding-top: 2.5em;
+	padding-left: calc(var(--side-panel-width) + 0px); /* Adjust the padding */
+	text-align: center;
 }
