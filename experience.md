@@ -21,7 +21,7 @@ permalink: /experience/
         * Wrote code in object-oriented multi-threaded SystemVerilog verification environment in tandem with design updates for new features, identifying and locating RTL bugs and logic errors in the design or testbench, running regressions, for SerDes chipset.
         * Verified various standard communications protocols such as I2C, SPI, CSI-2(D/C-PHY) at a low level.
 * **01/2019 - 05/2019**
-    * Georgia Tech: Graduate TA, Analog Electronics Lab 
+    * **Georgia Tech: Graduate TA, Analog Electronics Lab**
         * Led students through a series of weekly laboratory experiments & graded assignments.
 * **08/2018 - 12/2018:**
     * **Georgia Tech: Graduate TA, High Performance Computer Architecture**
