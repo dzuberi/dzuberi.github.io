@@ -1,4 +1,0 @@
----
-layout: experience
-title: Experience
----

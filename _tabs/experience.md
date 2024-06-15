@@ -1,11 +1,13 @@
 ---
-layout: page
+#layout: page
+layout: experience
 title: Experience
 permalink: /experience/
 icon: fa-solid fa-briefcase
 order: 2
 ---
 
+<!--
 * **01/2024 - 03/2024: Research Assistant: Amy Ousterhout**
 * **09/2023 - 12/2023: Research Assistant: Dean Tullsen**
 * **08/2021 - 09/2023: NVIDIA: Senior ASIC Design Verification Engineer**
@@ -39,3 +41,4 @@ order: 2
         * Used MATLAB to analyze and visualize data in attempt to find precursors to earthquakes in sub-ionospheric VLF signals.
 * **01/2016 - 04/2016**:
     * **GE Transportation: Engineering Intern**
+-->
