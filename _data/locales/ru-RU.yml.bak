@@ -39,7 +39,7 @@ copyright:
   verbose: >-
     Если не указано иное, авторские посты на этом сайте защищены лицензией Creative Commons Attribution 4.0 International (CC BY 4.0).
 
-meta: null
+meta: Использует тему :THEME для :PLATFORM
 
 not_found:
   statment: Извините, мы перепутали URL-адрес или он указывает на что-то несуществующее.
