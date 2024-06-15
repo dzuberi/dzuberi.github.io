@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+{% include lang.html %} {% if page.layout == 'page' or page.collection == 'tabs'
+%} {% assign tab_key = page.title | downcase %} {% assign title =
+site.data.locales[lang].tabs[tab_key] | default: page.title %}
+<h1 class="dynamic-title">{{ title }}</h1>
+<div class="timeline">
+  {% for item in site.data.experience %}
+  <div class="timeline-item {% cycle 'timeline-left', 'timeline-right' %}">
+    <div class="timeline_content">
+      <h3>{{ item.title }} at {{ item.company }}</h3>
+      <p><strong>{{ item.date }}</strong></p>
+      <ul>
+        {% for desc in item.description %}
+        <li>{{ desc }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{% else %} {{ content }} {% endif %}
