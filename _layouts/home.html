@@ -5,6 +5,11 @@ refactor: true
 
 {% include lang.html %}
 
+<article class="px-1">
+  <h1 class="dynamic-title">About Me</h1>
+  <div class="content">{{ content }}</div>
+</article>
+
 {% assign pinned = site.posts | where: 'pin', 'true' %}
 {% assign default = site.posts | where_exp: 'item', 'item.pin != true and item.hidden != true' %}
 
