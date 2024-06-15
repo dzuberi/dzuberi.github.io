@@ -14,7 +14,7 @@ body {
   content: '';
   position: absolute;
   width: 6px;
-  background-color: #3498db;
+  background-color: var(--text-color);
   top: 0;
   bottom: 0;
   left: 50%;
@@ -37,7 +37,7 @@ body {
   width: 25px;
   height: 25px;
   background-color: white;
-  border: 4px solid #3498db;
+  border: 4px solid var(--text-color);
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -88,7 +88,7 @@ body {
 
 .timeline_content {
   padding: 20px 30px;
-  background-color: --var(mask-bg);
+  background-color: var(--mask-bg);
   position: relative;
   border-radius: 6px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
