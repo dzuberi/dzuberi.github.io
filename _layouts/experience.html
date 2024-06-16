@@ -12,14 +12,35 @@ site.data.locales[lang].tabs[tab_key] | default: page.title %}
     <div class="timeline_content">
       <h3>{{ item.title }} at {{ item.company }}</h3>
       <p><strong>{{ item.date }}</strong></p>
-      <ul>
-        {% for desc in item.description %}
-        <li>{{ desc }}</li>
-        {% endfor %}
-      </ul>
+      {% if item.description and item.description.size > 0 %}
+      <button class="timeline-collapsible">Show Description</button>
+      <div class="timeline-collapsible-content">
+        <ul>
+          {% for desc in item.description %}
+          <li>{{ desc }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
     </div>
   </div>
   {% endfor %}
 </div>
-
 {% else %} {{ content }} {% endif %}
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var coll = document.getElementsByClassName("timeline-collapsible");
+    for (var i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  });
+</script>

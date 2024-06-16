@@ -16,7 +16,7 @@ timezone: America/Los_Angeles
 
 title: Danial Zuberi # the main title
 
-tagline: Computer Science PhD Student # it will display as the sub-title
+tagline: Computer Science PhD Student @UCSD # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   Personal website for Danial Zuberi
