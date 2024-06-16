@@ -32,7 +32,7 @@ site.data.locales[lang].tabs[tab_key] | default: page.title %}
 </div>
 {% else %} {{ content }} {% endif %}
 
-<script>
+<script defer>
   document.addEventListener("DOMContentLoaded", function () {
     var coll = document.getElementsByClassName("timeline-collapsible");
     var popup = document.getElementsByClassName(
