@@ -7,28 +7,37 @@ layout: default
 <script defer>
   document.addEventListener("DOMContentLoaded", function () {
     var coll = document.getElementsByClassName("timeline-collapsible");
-    var popup = document.getElementsByClassName(
-      "timeline-description-popup"
-    )[0];
+    console.log(coll);
 
     for (var i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function () {
-        popup.style.display = "flex"; // Show the popup
-      });
+      coll[i].addEventListener("click", function (btn) {
+        // console.log(coll[i].nextElementSibling)
+        p = this.nextElementSibling;
+        console.log(p);
+        p.style.display = "flex"; // Show the popup
+      }, coll[i]);
     }
 
     // Close popup when clicking close button
-    var closeBtn = document.getElementsByClassName("timeline-close-popup")[0];
-    closeBtn.addEventListener("click", function () {
-      popup.style.display = "none"; // Hide the popup
+    Array.from(document.getElementsByClassName("timeline-close-popup")).forEach(closeBtn => {
+      closeBtn.addEventListener("click", function () {
+        closeAllBtns();
+      });
     });
 
     // Close popup when clicking outside the popup content
     window.addEventListener("click", function (event) {
-      if (event.target == popup) {
-        popup.style.display = "none"; // Hide the popup
-      }
+      Array.from(document.getElementsByClassName("timeline-description-popup")).forEach(p => {
+        if (event.target == p) {
+          p.style.display = "none"; // Hide the popup
+        }
+      });
+
     });
+
+    function closeAllBtns() {
+      Array.from(document.getElementsByClassName("timeline-description-popup")).forEach(p => { p.style.display = "none" });
+    }
   });
 </script>
 
