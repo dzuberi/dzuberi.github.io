@@ -1,12 +1,13 @@
 ---
-layout: projects
-title: Projects
-permalink: /projects/
-icon: "fa-solid fa-code"
-order: 3
+layout: project
+title: AES Implementation in CUDA
+description: Examples of text, typography, math equations, diagrams, flowcharts, pictures, videos, and more.
+date: 2019-08-08 11:33:00 +0800
+categories: [Blogging, Demo]
+tags: [typography]
+math: true
+mermaid: true
 ---
-
-**This page is a WIP. I intend to keep track of interesting personal projects here, but need to fill it out**
 
 * [AES implementation in CUDA](https://github.com/dzuberi/AES-Cuda){:target="_blank"}
     * Implemented the AES encryption/decryption algorithm in C++ and CUDA.
