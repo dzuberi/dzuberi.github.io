@@ -91,12 +91,12 @@
   --tb-even-bg: rgb(31, 31, 34); /* even rows of the posts' table */
   --tb-border-color: var(--tb-odd-bg);
   --footnote-target-bg: rgb(63, 81, 181);
-  --btn-share-color: #6c757d;
-  --btn-share-hover-color: #bfc1ca;
-  --card-bg: #1e1e1e;
-  --card-hovor-bg: #464d51;
-  --card-shadow: rgb(21, 21, 21, 0.72) 0 6px 18px 0,
-    rgb(137, 135, 135, 0.24) 0 0 0 1px;
+  --btn-share-color: var(--sidebar-btn-color);
+  --btn-share-hover-color: var(--sidebar-hover-bg);
+  --card-bg: var(--Mantle);
+  --card-hovor-bg: var(--Lavender);
+  --card-shadow: rgb(245, 194, 231, 0.22) 0 6px 18px 0,
+    rgb(245, 194, 231, 1) 0 0 0 1px;
   --kbd-wrap-color: #6a6a6a;
   --kbd-text-color: #d3d3d3;
   --kbd-bg-color: #242424;

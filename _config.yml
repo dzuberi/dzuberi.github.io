@@ -168,6 +168,9 @@ collections:
   tabs:
     output: true
     sort_by: order
+  projects:
+    output: true
+    permalink: /projects/:title/
 
 defaults:
   - scope:
@@ -194,6 +197,12 @@ defaults:
       path: assets/js/dist
     values:
       swcache: true
+  - scope:
+      path: _projects
+      type: projects
+    values:
+      layout: project
+      permalink: /projects/:title/
 
 sass:
   style: compressed

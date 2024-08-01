@@ -6,9 +6,6 @@ icon: "fa-solid fa-code"
 order: 3
 ---
 
-**This page is a WIP. I intend to keep track of interesting personal projects here, but need to fill it out**
+Welcome to my projects page! I intend to keep track of interesting personal/class projects on this page. It's not up to date yet, but I'm working on it!
 
-* [AES implementation in CUDA](https://github.com/dzuberi/AES-Cuda){:target="_blank"}
-    * Implemented the AES encryption/decryption algorithm in C++ and CUDA.
-    * Implemented a simple windows GUI to choose a file, encryption type and key, and number of threads
-    * Verified functionality in encryption/decrpytion in ability to recover the file. Saw significant speedup on my GTX 1080.
+I have some interesting project ideas that I haven't had time to work on yet. I like to choose projects to learn new skills that I don't have.

@@ -13,7 +13,7 @@ tail_includes:
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>{{ page.title }}</h1>
+    <h1 data-toc-skip>{{ page.title }} {% if page.gh %}<a href={{ page.gh }}></a>{% endif %}</h1>
     {% if page.description %}
       <p class="post-desc fw-light mb-4">{{ page.description }}</p>
     {% endif %}
@@ -132,19 +132,6 @@ tail_includes:
         d-flex justify-content-between align-items-center mt-5 pb-2
       "
     >
-      <div class="license-wrapper">
-        {% if site.data.locales[lang].copyright.license.template %}
-          {% capture _replacement %}
-        <a href="{{ site.data.locales[lang].copyright.license.link }}">
-          {{ site.data.locales[lang].copyright.license.name }}
-        </a>
-        {% endcapture %}
-
-          {{ site.data.locales[lang].copyright.license.template | replace: ':LICENSE_NAME', _replacement }}
-        {% endif %}
-      </div>
-
-      {% include post-sharing.html lang=lang %}
     </div>
     <!-- .post-tail-bottom -->
   </div>
