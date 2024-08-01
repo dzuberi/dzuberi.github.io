@@ -116,8 +116,9 @@ tail_includes:
       <div class="post-tags">
         <i class="fa fa-tags fa-fw me-1"></i>
         {% for tag in page.tags %}
+        <!--href="{{ site.baseurl }}/tags/{{ tag | slugify | url_encode }}/"!-->
           <a
-            href="{{ site.baseurl }}/tags/{{ tag | slugify | url_encode }}/"
+            href="{{ page.url }}"
             class="post-tag no-text-decoration"
           >
             {{- tag -}}
