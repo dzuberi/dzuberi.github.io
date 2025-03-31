@@ -1,0 +1,18 @@
+- title: The Benefits and Limitations of User Interrupts for Preemptive Userspace Scheduling
+  authors: Linsong Guo and Danial Zuberi and Tal Garfinkel and Amy Ousterhout
+  year: ''
+  venue: ''
+  url: https://www.usenix.org/conference/nsdi25/presentation/guo
+  abstract: ''
+- title: 'Greater than the Sum of its LUTs: Scaling Up LUT-based Neural Networks with AmigoLUT'
+  authors: Olivia Weng and Marta Andronic and Danial Zuberi and Jiaqing Chen and Caleb Geniesse and George A Constantinides and Nhan Tran and Nicholas J Fraser and Javier Mauricio Duarte and Ryan Kastner
+  year: 2025
+  venue: Proceedings of the 2025 ACM/SIGDA International Symposium on Field …, 2025
+  url: https://dl.acm.org/doi/abs/10.1145/3706628.3708874
+  abstract: Applications like high-energy physics and cybersecurity require extremely high throughput and low latency neural network (NN) inference. Lookup-table-based NNs address these constraints by implementing NNs as lookup tables (LUTs), achieving inference latency on the order of nanoseconds. Since LUTs are a fundamental FPGA building block, LUT-based NNs efficiently map to FPGAs. LogicNets (and its successors) form one class of LUT-based NNs that target FPGAs, mapping neurons directly to LUTs to meet low latency constraints with minimal resources. However, it is difficult to build larger, more performant LUT-based NNs like LogicNets because LUT usage increases exponentially with respect to neuron fan-in (i.e., number of synapses X synapse bitwidth). A large LUT-based NN quickly runs out of LUTs on an FPGA. Our work AmigoLUT addresses this issue by creating ensembles of smaller LUT-based …
+- title: 'Extended User Interrupts (xUI): Fast and Flexible Notification without Polling'
+  authors: Berk Aydogmus and Linsong Guo and Danial Zuberi and Tal Garfinkel and Dean Tullsen and Amy Ousterhout and Kazem Taram
+  year: 2025
+  venue: ''
+  url: https://mktrm.github.io/files/xui-asplos25.pdf
+  abstract: 'Extended user interrupts (xUI) is a set of processor extensions that builds on Intel’s UIPI model of user interrupts, for enhanced performance and flexibility. This paper deconstructs Intel’s current UIPI design through analysis and measurement, and uses this to develop an accurate model of its timing. It then introduces four novel enhancements to user interrupts: tracked interrupts, hardware safepoints, a kernel bypass timer, and interrupt forwarding. xUI is modeled in gem5 simulation and evaluated on three use cases–preemption in a high-performance user-level runtime, IO notification in a layer3 router using DPDK, and IO notification in a synthetic workload with a streaming accelerator modeled after Intel’s Data Streaming Accelerator. This work shows that xUI offers the performance of shared memory polling with the efficiency of asynchronous notification.'

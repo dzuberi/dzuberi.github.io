@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+{% include lang.html %}
+<article class="px-1">
+    <h1 class="dynamic-title">{{page.title}}</h1>
+    <div class="content">{{page.content}}</div>
+</article>
+
+<div id="post-list" class="flex-grow-1 px-xl-1">
+    {% for publication in site.data.publications %}
+    <article class="card-wrapper card">
+        <a href="{{ publication.url}}" class="post-preview row g-0 flex-md-row-reverse">
+            {% assign card_body_col = '12' %}
+
+
+            <div class="col-md-{{ card_body_col }}">
+                <div class="card-body d-flex flex-column">
+                    <h1 class="card-title my-2 mt-md-0">{{ publication.title }}</h1>
+                    <div class="card-text content mt-0 mb-3">
+                        <p>{{publication.authors | replace: " and ", ", " | replace: "Danial Zuberi", "<strong>Danial
+                                Zuberi</strong>"}}</p>
+                    </div>
+                    <div class="post-meta flex-grow-1 d-flex align-items-end">
+                        <div class="me-auto">
+                            <!-- posted date -->
+                            <i class="far fa-calendar fa-fw me-1"></i>
+                            {{ publication.year | default: "N/A" }}
+                            <i class="far fa-location-dot fa-fw me-1"></i>
+                            <span class="categories">
+                                {{publication.venue | default: "N/A"}}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- .post-meta -->
+            </div>
+            <!-- .card-body -->
+        </a>
+    </article>
+    {% endfor %}
+</div>
+
+{% if paginator.total_pages > 1 %}
+{% include post-paginator.html %}
+{% endif %}

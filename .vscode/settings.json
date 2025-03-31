@@ -26,5 +26,8 @@
   "stylelint.validate": ["css", "less", "postcss", "scss"],
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[liquid]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
   }
 }
